@@ -20,3 +20,9 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+fun ByteArray.startsWith(byteArray: ByteArray): Boolean {
+    if (this.size < byteArray.size) return false
+    for (pair in this.zip(byteArray)) if (pair.first != pair.second) return false
+    return true
+}
