@@ -26,3 +26,8 @@ fun ByteArray.startsWith(byteArray: ByteArray): Boolean {
     for (pair in this.zip(byteArray)) if (pair.first != pair.second) return false
     return true
 }
+
+//fun Char.isDigit(): Boolean {
+//    return  (this == '0' || this == '1' || this == '2' || this == '3' || this == '4' ||
+//             this == '5' || this == '6' || this == '7' || this == '8' || this == '9')
+//}
