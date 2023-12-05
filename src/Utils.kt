@@ -29,6 +29,12 @@ fun ByteArray.startsWith(byteArray: ByteArray): Boolean {
 
 fun String.toIntList(): List<Int> {
     val out = mutableListOf<Int>()
-    for (x in this.split(' ')) if (x.isNotEmpty()) out.add(out.size, x.toInt())
+    for (x in this.split(' ')) if (x.isNotEmpty())out.add(out.size, x.toInt())
+    return out
+}
+
+fun String.toLongList(): List<Long> {
+    val out = mutableListOf<Long>()
+    for (x in this.split(' ')) if (x.isNotEmpty())out.add(out.size, x.toLong())
     return out
 }
