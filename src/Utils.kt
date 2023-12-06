@@ -38,3 +38,9 @@ fun String.toLongList(): List<Long> {
     for (x in this.split(' ')) if (x.isNotEmpty())out.add(out.size, x.toLong())
     return out
 }
+
+fun List<Long>.prod(): Long {
+    var p: Long = 1
+    for (x in this) p *= x
+    return p
+}
