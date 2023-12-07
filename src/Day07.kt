@@ -85,6 +85,10 @@ fun main() {
     // test if implementation meets criteria from the description, like:
     val testInput = readTestInput("Day07")
     check(part1(testInput) == 6440L)
+    println()
+
+    val testAInput = readTestInput("Day07a")
+    check(part1(testAInput) == 819L)
 
     val input = readInput("Day07")
     part1(input).println()
