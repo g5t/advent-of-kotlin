@@ -5,7 +5,7 @@ fun main() {
         if (this == 'K') return 11
         if (this == 'Q') return 10
         if (this == 'J') return 0
-        if (this == 'T') return 8
+        if (this == 'T') return 9
         return this.digitToInt() - 1
     }
 
@@ -67,7 +67,7 @@ fun main() {
 
     fun part1(input: List<String>): Long {
         val hands = input.map{decodeBid(it)}.sorted()
-//        hands.map{println(it)}
+        hands.map{println(it)}
         return hands.mapIndexed{i, it -> (i + 1) * it.bid}.sum()
     }
 
