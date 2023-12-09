@@ -125,7 +125,6 @@ fun main() {
             maps[next.key] = res
             counter += 1
         }
-
         var next = maps[startKey]
         val distances = mutableListOf<Long>()
         var subtotal = 0L
